@@ -74,19 +74,44 @@ Send a pull request to this repository with your solution. The title of your pul
 
 #### What can I win?
 
-TODO
+Prizes are sponsored by [PhpStorm](https://www.jetbrains.com/phpstorm/) and [Tideways](https://tideways.com/). The winners will be determined based on the fastest entries submitted, if two equally fast entries are registered, time of submission will be taken into account.
+
+All entries must be submitted before March 16, 2026 (so you have until March 15, 11:59PM to submit). Any entries submitted after the cutoff date won't be taken into account.
+
+First place will get:
+
+- One PhpStorm Elephpant
+- One Tideways Elephpant
+- One-year JetBrains all-products pack license
+- Three-month JetBrains AI Ultimate license
+- One-year Tideways Team license
+
+Second place will get:
+
+- One PhpStorm Elephpant
+- One Tideways Elephpant
+- One-year JetBrains all-products pack license
+- Three-month JetBrains AI Ultimate license
+
+Third place will get:
+
+- One PhpStorm Elephpant
+- One Tideways Elephpant
+- One-year JetBrains all-products pack license
 
 #### What kind of server is used for the benchmark?
 
-TODO
+The benchmark runs on a Premium Intel Digital Ocean Droplet with 1vCPU and 2GB of memory. We deliberately chose not to use a more powerful server because we like to test in a somewhat "standard" environment for PHP.
 
 #### How to ensure fair results?
 
 Each submission will be manually verified before its benchmark is run on the benchmark server. We'll also only ever run one single submission at a time to prevent any bias in the results. Additionally, we'll use a consistent, dedicated server to run benchmarks on to ensure that the results are comparable.
 
+If needed, multiple runs will be performed for the top submissions, and their average will be compared.
+
 #### Why not one billion?
 
-This challenge was inspired by the [1 billion row challenge in Java](https://github.com/gunnarmorling/1brc). The reason we're using only 100 million rows is because this version has a lot more complexity compared to the Java version (date parsing, JSON encoding, array sorting). To prevent the benchmark server from being overloaded, we're limiting the number of rows to 100 million.
+This challenge was inspired by the [1 billion row challenge in Java](https://github.com/gunnarmorling/1brc). The reason we're using only 100 million rows is because this version has a lot more complexity compared to the Java version (date parsing, JSON encoding, array sorting).
 
 #### What about the JIT?
 
