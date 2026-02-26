@@ -412,7 +412,13 @@ final class BenchmarkRunCommand
                     'benchmarkTime' => $newTime,
                 ];
 
-                $this->githubComment($prNumber, "You've improved your result! Have a cookie: 🍪");
+                $messages = [
+                    "You've improved your result! Have a cookie: 🍪",
+                    "You've improved your result! Nice!",
+                    "Yes, this is an automated message to tell you you've improved your result. Have a star: ⭐️",
+                ];
+
+                $this->githubComment($prNumber, $messages[array_rand($messages)]);
             } else {
                 $data[$currentBranch] = [
                     'submissionTime' => $submissionTime,
