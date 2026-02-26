@@ -49,6 +49,10 @@ final class BenchmarkRunCommand
             $this->warning('Daemon mode enabled. Press ctrl+c to stop.');
 
             while (true) {
+                if ($cache === false) {
+                    $this->cache->remove(self::CACHE_KEY);
+                }
+
                 $this->run($pr);
                 $this->warning('Sleeping for 10 seconds…');
                 sleep(10);
